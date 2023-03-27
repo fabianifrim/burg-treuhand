@@ -11,11 +11,10 @@ $body = nl2br('Telefon: ' . $phone . ' | ' . 'Email: ' . $customer_mail . ';
                Mesaj: ' . $msg);
 
 $headers = array(
-  'Authorization: Bearer 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',
+  'Authorization: Bearer',
   'Content-Type: application/json'
 );
 
-// DE STERS DACA VR SA PRIMESTI MAIL PE DECRIT
 
 $data = array(
   "personalizations" => array(
