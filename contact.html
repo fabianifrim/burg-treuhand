@@ -18,7 +18,7 @@
   <script>
   function generateToken(){
     return grecaptcha.ready(function() {
-        grecaptcha.execute('6Le_hAMhAAAAAAZyhwFyipSrQHvnKboZMmS0fQ6j', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('', {action: 'submit'}).then(function(token) {
           console.log(token);
           var recaptchaResponse = document.getElementById('recaptchaResponse');
           recaptchaResponse.value = token;
