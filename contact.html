@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagini/logoicon.png">
+  <link href="stylev1.1.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="code.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le_hAMhAAAAAAZyhwFyipSrQHvnKboZMmS0fQ6j"></script> 
+  <script>
+  function generateToken(){
+    return grecaptcha.ready(function() {
+        grecaptcha.execute('6Le_hAMhAAAAAAZyhwFyipSrQHvnKboZMmS0fQ6j', {action: 'submit'}).then(function(token) {
+          console.log(token);
+          var recaptchaResponse = document.getElementById('recaptchaResponse');
+          recaptchaResponse.value = token;
+          return true;
+        });
+    });
+  }
+
+  </script>
+
+</head>
+<body>
+  <section class="contact-page">
+    <!-- Navbar -->    
+    
+    
+
+    
+    <section class="sus-tot">
+            <header class="hdesktop">
+              <div class="hsus">
+              <address>contabilitate@treuhand.ro</address>
+              <div class="limbi-back">
+                <div class="limbi">
+                 <a href="#" onclick="setLanguage('en')"><img src="imagini/great-britain.png"  width="25px"></a> 
+                 <a href="#" onclick="setLanguage('ro')"><img src="imagini/romania.png"  width="25px"></a></div></div>
+              <address>0721 275 505</address>
+              </div>
+              <div class="line-1"></div>
+              <nav id="nav">
+                <a href="index.html">
+                  <img id="logosusscris" src="imagini/Logoscrisconta-alb.svg" class="logosusscris" width="217.18px">
+                  <img id="logosusscris2tel" src="imagini/logoburgfooter2.png" class="logosusscris2tel" width="217.18px">
+                </a>
+              <ul>
+              <li><a id="home" href="index.html">Acasă</a></li>
+              <li><a id="services" href="servicii.html">Servicii</a></li>
+              <li><a id="aboutus" href="desprenoi.html">Despre noi</a></li>
+              <li><a id="contact" href="contact.html">Contact</a></li>
+              <div class="navdown">
+                <button id="navbutt" class="navbutt">Link-uri utile</button>
+                <div class="navdown-content">
+                  <a href="https://www.anaf.ro/">anaf.ro</a>
+                  <a href="https://bnr.ro/">bnr.ro</a>
+                  <a href="https://mfinante.gov.ro/">mfinante.gov.ro</a>
+                </div>
+              </div>
+              </ul>
+              <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul id="mynav" class="mobile-menu">
+                  <li><a id="home1" href="index.html">Acasă</a></li>
+                  <li><a id="services1" href="servicii.html">Servicii</a></li>
+                  <li><a id="aboutus1" href="desprenoi.html">Despre noi</a></li>
+                  <li><a id="contact1" href="contact.html">Contact</a></li>
+                  <li class="limbi2">
+                    <a href="#" onclick="setLanguage('en')"><img src="imagini/great-britain.png"  width="25px"></a> 
+                    <a href="#" onclick="setLanguage('ro')"><img src="imagini/romania.png"  width="25px"></a>
+
+                  </li>
+                </ul>
+           </div>
+              </nav>
+            </header>
+       <img id="burglogo" src="imagini/logoburgheader.svg" class="burglogo">
+
+
+
+
+       <!-- Hero section -->
+       <div class="herosec">
+        <div class="herosec1">
+        <div class="stanga1">
+        <h1 class="h1" id="header1">Contact</h1>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div id="contactform" class="contactform">
+      <div id="h7" class="h7">Cu ce te putem ajuta<span class="span7" style="color:#ce2b2c">?</span></div>
+        <div class="contactform-left">
+          <h7 id="h7st">Cu ce te putem ajuta<span style="color:#ce2b2c">?</span></h7>
+          <div class="cm-info">
+            <div class="cm-part">
+              <img alt="location" src="imagini/location.png" class="locatie">
+              <p7 id="p7">Locatie</p7>
+              <address id="address" class="contact-address">Bucuresti, Sec. 1, <br>
+                Str. Cp. Octav Cocărăscu, nr. 75</address>
+              <div class="cm-part">
+                <img alt="mail" src="imagini/mail.png" class="locatie">
+                <p7 id="p7nd">Contact</p7>
+                <address id="address2" class="contact-address">contabilitate@treuhand.ro<br>0721 275 505</address>
+              </div>
+              <div class="cm-part">
+                <img alt="clock" src="imagini/clock.png" class="locatie">
+                <p7 id="p7rd">Program</p7>
+                <address id="address3" class="contact-address2">L-V: 9:00 - 18:00<br>
+                  S-D: Închis</address id="address3nd">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="contactform-right">
+          <div class="contactformarea">
+          <form method="post" id="contactFormId" action="mail.php" onsubmit="return generateToken()">
+            <p8 id="p8">Nume*</p8>
+            <input type="text" class="field1" name="name" required>
+            <p9 id="p9">Telefon*</p9>
+            <input type="text" class="field2" name="phone" required>
+            <p10 id="p10">Adresa de email*</p10>
+            <input type="email" class="field3" name="email" required>
+            <p11 id="p11">Subiect*</p11>
+            <input type="text" class="field4" name="subiect" required>
+            <p12 id="p12">Mesaj*</p12> 
+            <textarea class="field5" name="msg" required></textarea>
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+            <label class="gdpr">
+              <input type="checkbox" class="checkbox" name="checkbox" required>
+              <a id="checkbox">Am citit și sunt de acord cu</a><a id="gdpr" class="gdpr-link" href="servicii.html"> termenii GDPR.</a>* 
+             </label>
+            <button id="butoncontact" type="submit" class="butoncontact" >Trimite mesajul</button>
+
+          </form>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="nav22">
+      <div class="nav2">
+        <a href="index.html">
+          <img id="logosusscris2" src="imagini/logoburgfooter2.png" class="logosusscris2" width="217.18px"></a>
+       <ul>
+       <li><a id="home2" href="index.html">Acasă</a></li>
+       <li><a id="services2" href="servicii.html">Servicii</a></li>
+       <li><a id="aboutus2" href="desprenoi.html">Despre noi</a></li>
+       <li><a id="contact2" href="contact.html">Contact</a></li>
+       <div class="navdown2">
+         <button id="navbutt2" class="navbutt2">Link-uri utile</button>
+         <div class="navdown-content2">
+           <a href="https://www.anaf.ro/">anaf.ro</a>
+           <a href="https://bnr.ro/">bnr.ro</a>
+           <a href="https://mfinante.gov.ro/">mfinante.gov.ro</a>
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <footer>
+      <div class="footer-conta">
+      <img class="l-2" src="imagini/logoburgfooter.svg" width="142px">    
+      <div class="footer-info">
+        <h8 id="h8">Locatie<br></h8>
+        <p13 id="p13nd">București, Sec. 1,<br>Str. Cp. Octav Cocărăscu nr. 75</p13>
+      </div>
+      <div class="footer-info">
+        <h8 id="h8nd">Politici<br></h8><br>
+        <a  href="politica.html" class="footer-links">Politica de confidențialitate</a><br>
+        <a class="footer-links" href="cookies.html">Politica privind Cookies</a>
+        <br><a class="footer-links" href="termeni.html">Termeni si condiții</a>
+      </div>
+      <div class="footer-info">
+        <h8>Contact<br></h8>
+        <p13>contabilitate@treuhand.ro<br>0721 275 505</p13>
+      </div>
+      <div class="footer-info">
+        <h8 id="h8rd">Link-uri utile<br></h8>
+        <a id="h8rd1" class="footer-links" href="https://anaf.ro/">anaf.ro</a><br>
+        <a class="footer-links" href="https://bnr.ro/">bnr.ro</a><br>
+        <a class="footer-links" href="https://mfinante.gov.ro/">mfinante.gov.ro</a>
+      </div>
+      
+  <h1000>Copyright © 2022 Burg Treuhand SRL</h1000>
+    </div>
+</footer>
+
+
+
+  </section>
+</body>
+
+
+
+
+<!-- Script -->
+<script>
+ $(function() {
+        //hang on event of form with id=myform
+        $("#contactFormId").submit(function(e) {
+
+            //prevent Default functionality
+            e.preventDefault();
+
+            generateToken();
+
+            //get the action-url of the form
+            var actionurl = e.currentTarget.action;
+
+            //do your own request an handle the results
+            $.ajax({
+                    url: actionurl,
+                    type: 'post',
+                    data: $("#contactFormId").serialize(),
+                    success: function(data) {
+                      
+                      $("[name='email']").val('');
+
+                      //BUTON DUPA CE SE TRIMITE EMAIL
+                      $("#butoncontact").html(language.emailSucces);
+                      $("#butoncontact").css('background-color', '#191C3D');
+                      $("#butoncontact").css('transition', '0.4s');
+                      $("#butoncontact").css('padding', '10px 25px');
+
+                      setTimeout(
+                      function() 
+                      {
+                        // DUPA 3 SECUNDE IL FACEM INAPOI
+                        $("#butoncontact").html(language.butoncontact);
+                        $("#butoncontact").css('background-color', 'red');
+                        $("#butoncontact").css('transition', '0.4s');
+                      }, 3500);
+                      $("#butoncontact").css('padding', '10px 25px');
+
+                    }
+            });
+
+        });
+
+    });
+
+
+
+
+
+  var language; 
+  function getLanguage() {
+    (localStorage.getItem('language') == null) ? setLanguage('ro') : false;
+    $.ajax({ 
+    url:  './language/' +  localStorage.getItem('language') + '.json', 
+    dataType: 'json', async: false, dataType: 'json', 
+    success: function (lang) { 
+      language = lang 
+    } });
+  }
+
+  
+  function setLanguage(lang) {
+    if (localStorage.getItem('language') !== lang){
+      localStorage.setItem('language', lang);
+      updateText();
+    }
+  }
+
+  function updateText(){
+    $(document).ready(function(){
+      // apelare functie care ia ce limba este selectata la mom actual
+      getLanguage();
+
+      //AICI SE UPDATEAZA TEXTU
+      $('#header1contact').text(language.header1contact);
+      $('#home').text(language.home);
+      $('#services').text(language.services);
+      $('#aboutus').text(language.aboutus);
+      $('#contact').text(language.contact);
+      $('#navbutt').text(language.navbutt);
+      $('#home1').text(language.home1);
+      $('#services1').text(language.services1);
+      $('#aboutus1').text(language.aboutus1);
+      $('#contact1').text(language.contact1);
+      $('#home2').text(language.home2);
+      $('#services2').text(language.services2);
+      $('#aboutus2').text(language.aboutus2);
+      $('#contact2').text(language.contact2);
+      $('#navbutt2').text(language.navbutt2);
+      $('#h7').text(language.h7);
+      $('#h7st').text(language.h7st);
+      $('#p7').text(language.p7);
+      $('#p7nd').text(language.p7nd);
+      $('#p7rd').text(language.p7rd);
+      $('#address').text(language.address);
+      $('#address2').text(language.address2);
+      $('#address3').text(language.address3);
+      $('#address3nd').text(language.address3nd);
+      $('#p8').text(language.p8);
+      $('#p9').text(language.p9);
+      $('#p10').text(language.p10);
+      $('#p11').text(language.p11);
+      $('#p12').text(language.p12);
+      $('#checkbox').text(language.checkbox);
+      $('#gdpr').text(language.gdpr);
+      $('#butoncontact').text(language.butoncontact);
+      $('#h8').text(language.h8);
+      $('#h8nd').text(language.h8nd);
+      $('#h8rd').text(language.h8rd);
+      $('#h8rd1').text(language.h8rd1);
+      $('#p13').text(language.p13);
+      $('#p13nd').text(language.p13nd);
+      $('#schedule').text(language.schedule);
+      
+    });
+  }
+
+  updateText();
+  </script>
+
+
+
+
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+
+
+
+
+
+function toggleMobileMenu(menu){
+menu.classList.toggle('open');
+}
+
+
+$(document).scroll(function() {
+var y = $(this).scrollTop();
+if (y > 250) {
+$('.nav22').slideDown();
+$('.nav2').slideDown();
+$('.logosusscris2').slideDown();
+} else {
+$('.nav22').slideUp();
+$('.nav2').slideUp();
+$('.logosusscris2').slideUp();
+}
+});
+
+</script>
+</html>
